@@ -1,0 +1,19 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+#### this is my attempt
+```{r libraries,verbose=FALSE,echo=FALSE}
+library(ggplot2)
+```
+
+```{r cars, echo=FALSE}
+cars <- cars
+names(cars)
+ggplot(cars,aes(x=speed))+
+  geom_histogram()
+ggplot(cars,aes(x=speed,y=dist))+
+  geom_point()
+```
+
